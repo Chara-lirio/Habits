@@ -1,0 +1,104 @@
+/* Colores principales */
+:root {
+    --purple-dark: #4b0082;
+    --purple-light: #8a2be2;
+    --dark-bg: #121212;
+    --secondary-bg: #1e1e2f;
+    --text-light: #eeeeee;
+    --text-muted: #bbbbbb;
+}
+
+/* Body y fuente */
+body {
+    background: var(--dark-bg);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Degradados */
+.header-gradient {
+    background: linear-gradient(90deg, var(--purple-dark), var(--purple-light));
+}
+
+.footer-gradient {
+    background: linear-gradient(90deg, var(--purple-light), var(--purple-dark));
+}
+
+/* Navbar personalizado */
+.bg-purple {
+    background-color: var(--purple-dark) !important;
+}
+
+/* Botones */
+.btn-purple {
+    background: var(--purple-light);
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.btn-purple:hover {
+    background: var(--purple-dark);
+    color: white;
+}
+
+/* Barra lateral */
+aside {
+    background: var(--secondary-bg);
+}
+
+/* Animaciones simples */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.fadeIn {
+    animation-name: fadeInDown;
+}
+
+/* Progreso */
+.progress-bar.bg-purple {
+    background-color: var(--purple-light);
+}
+
+/* Formularios select personalizados */
+.form-select.bg-purple {
+    background-color: var(--purple-dark);
+    color: white;
+    border: 1px solid var(--purple-light);
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
