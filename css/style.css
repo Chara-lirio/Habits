@@ -102,3 +102,30 @@ aside {
 html {
     scroll-behavior: smooth;
 }
+
+.text-purple-light {
+    color: var(--purple-light);
+    transition: color 0.3s ease;
+}
+
+.text-purple-light:hover {
+    color: var(--purple-dark);
+    text-decoration: underline;
+}
+
+.footer-link {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-link:hover {
+    color: var(--purple-dark);
+    text-decoration: none;
+}
+
+/* Separador línea */
+hr.bg-purple-light {
+    border-top: 1px solid var(--purple-light);
+    opacity: 0.3;
+    margin: 1rem 0;
+}
