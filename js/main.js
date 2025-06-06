@@ -25,3 +25,10 @@ function showAlert(message, type = 'success') {
 }
 
 // Aquí puedes agregar más funciones JS para futuras funcionalidades
+
+// Cargar el footer automáticamente
+fetch("components/footer.html")
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+    });
