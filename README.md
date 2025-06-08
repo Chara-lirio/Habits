@@ -26,6 +26,3 @@
 - HTML5, CSS3, JavaScript
 - Bootstrap 5
 - FontAwesome (iconos)
-- Git y GitHub para control de versiones
-- GitHub Pages (para despliegue estático)
-
